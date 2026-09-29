@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¡Felices 21! 🎁</title>
+  <meta name="description" content="Una sorpresa de cumpleaños.">
+  <meta name="theme-color" content="#5c1520">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+</head>
+<body>
+  <canvas id="fx" class="capa" aria-hidden="true"></canvas>
+  <canvas id="confeti" class="capa capa-confeti" aria-hidden="true"></canvas>
+
+  <main class="escena" id="escena">
+    <div class="globos" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+    <header class="intro">
+      <p class="eyebrow">Para <span data-nombre></span></p>
+      <h1 id="intro-texto"></h1>
+    </header>
+
+    <div class="escenario" id="escenario">
+      <div class="letreros" id="letreros" aria-hidden="true"></div>
+
+      <div class="pastel" id="pastel" role="img" aria-label="Pastel de cumpleaños">
+        <div class="velas" id="velas"></div>
+        <div class="piso piso-3"><span class="glaseado"></span></div>
+        <div class="piso piso-2"><span class="glaseado"></span></div>
+        <div class="piso piso-1"><span class="glaseado"></span><span class="texto-pastel" id="texto-pastel"></span></div>
+        <div class="plato"></div>
+      </div>
+
+      <button class="regalo" id="regalo" type="button" aria-label="Abrir el regalo">
+        <span class="tapa"><span class="lazo lazo-tapa"></span><span class="mono"><i></i><i></i></span></span>
+        <span class="caja"><span class="lazo lazo-caja"></span></span>
+      </button>
+    </div>
+
+    <p class="pista" id="pista" aria-live="polite"></p>
+    <a class="bajar" href="#mensaje">Un mensaje para ti <span aria-hidden="true">↓</span></a>
+  </main>
+
+  <section class="mensaje" id="mensaje">
+    <h2 id="msj-titulo"></h2>
+    <p class="msj-texto" id="msj-texto"></p>
+    <p class="firma" id="msj-firma"></p>
+    <div class="acciones">
+      <button class="btn" id="reencender" type="button" hidden>🕯️ Encender las velas otra vez</button>
+      <button class="btn btn-borde" id="envolver" type="button">🎁 Volver a envolver</button>
+      <a class="btn btn-borde" id="enlace-principal" hidden></a>
+    </div>
+  </section>
+
+  <button class="sonido" id="sonido" type="button" aria-label="Música" hidden>
+    <svg class="ico-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>
+    <svg class="ico-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm15.6 3 2.2-2.2-1.4-1.4-2.2 2.2-2.2-2.2-1.4 1.4 2.2 2.2-2.2 2.2 1.4 1.4 2.2-2.2 2.2 2.2 1.4-1.4z"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
