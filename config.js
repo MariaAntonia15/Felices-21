@@ -35,11 +35,5 @@ window.CONFIG = {
   },
 
   // "Cumpleaños feliz" en cajita musical al abrir la caja (true / false)
-  musica: true,
-
-  // Botón para ir a la otra página (déjalo en "" para ocultarlo)
-  enlacePrincipal: {
-    texto: "Ver nuestra historia ❤",
-    url: "https://mariaantonia15.github.io/Feliz-cumple-mi-amor/"
-  }
+  musica: true
 };

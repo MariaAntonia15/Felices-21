@@ -46,13 +46,6 @@
   $("#msj-titulo").textContent = m.titulo || "";
   $("#msj-texto").textContent = m.texto || "";
   $("#msj-firma").textContent = m.firma || "";
-  const ep = C.enlacePrincipal || {};
-  if (ep.url) {
-    const a = $("#enlace-principal");
-    a.href = ep.url;
-    a.textContent = ep.texto || "Ver más";
-    a.hidden = false;
-  }
 
   /* ---------- Velas con los números de la edad ---------- */
   const velas = String(edad).split("").map((d) => {

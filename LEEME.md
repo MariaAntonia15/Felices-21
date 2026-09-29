@@ -15,6 +15,5 @@ Todo está en **`config.js`**:
 | Títulos antes y después de abrir   | `intro`          |
 | Mensaje de abajo y firma           | `mensaje`        |
 | Apagar la música                   | `musica: false`  |
-| Botón hacia la otra página         | `enlacePrincipal`|
 
 La caja, el pastel y los letreros se dibujan con CSS y se ajustan solos al tamaño del celular o del computador.
